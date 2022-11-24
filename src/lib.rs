@@ -6,6 +6,7 @@ pub extern "C" fn alloc(len: u32) -> *mut u8 {
     return ptr;
 }
 
+// added documentation.
 extern "C" {
     pub(crate) fn set(_: *const u8, _: u32, _: *const u8, _: u32);
     pub(crate) fn get(_: *const u8, _: u32, _: *const u32) -> i64;
